@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "iPhone 14",
+    "price": "799,99",
+    "description": "A flagship device offering a premium user experience",
+    "url": "./assets/iPhone14.png",
+    "provider": "Apple"
+  },
+  {
+    "id": 2,
+    "name": "Huawei P40",
+    "price": "299,99",
+    "description": "A feature-packed smartphone with a versatile camera system",
+    "url": "./assets/HuaweiP40.png",
+    "provider": "Huawei"
+  },
+  {
+    "id": 3,
+    "name": "Samsung Galaxy S21 Ultra",
+    "price": "624,99",
+    "description": "A premium smartphone with top-notch features",
+    "url": "./assets/SamsungGalaxyS21Ultra.png",
+    "provider": "Samsung"
+  },
+  {
+    "id": 4,
+    "name": "Huawei Mate 40 Pro",
+    "price": "454,99",
+    "description": "A high-performance smartphone with cutting-edge technology",
+    "url": "./assets/HuaweiMate40Pro.png",
+    "provider": "Huawei"
+  },
+  {
+    "id": 5,
+    "name": "Samsung Galaxy S23 Ultra",
+    "price": "899,99",
+    "description": "An innovative smartphone with advanced photography features",
+    "url": "./assets/SamsungGalaxyS23Ultra.png",
+    "provider": "Samsung"
+  },
+  {
+    "id": 6,
+    "name": "iPhone 13 Pro",
+    "price": "599,99",
+    "description": "A flagship device known for its exceptional camera capabilities",
+    "url": "./assets/iPhone13Pro.png",
+    "provider": "Apple"
+  }
+]

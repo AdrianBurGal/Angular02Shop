@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Apple",
+    "country": "Estados Unidos",
+    "website": "https://www.apple.com/",
+    "products": [1, 6]
+  },
+  {
+    "name": "Huawei",
+    "country": "China",
+    "website": "https://consumer.huawei.com/",
+    "products": [2, 4]
+  },
+  {
+    "name": "Samsung",
+    "country": "Corea del Sur",
+    "website": "https://www.samsung.com/",
+    "products": [3, 5]
+  }
+]
