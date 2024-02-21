@@ -1,7 +1,9 @@
-import {Component} from '@angular/core';
+import {Component, inject} from '@angular/core';
 import {CartService} from "../../service/cart.service";
 import {NgForOf} from "@angular/common";
 import {FormBuilder, ReactiveFormsModule} from "@angular/forms";
+import {JavaScriptOptimizerPlugin} from "@angular-devkit/build-angular/src/tools/webpack/plugins";
+import {PhoneService} from "../../service/phone.service";
 
 @Component({
   selector: 'app-cart',
@@ -26,27 +28,30 @@ import {FormBuilder, ReactiveFormsModule} from "@angular/forms";
         </div>
         <button class="button" type="submit">Purchase</button>
       </form>
-
     </section>
   `,
   styleUrl: './cart.component.css'
 })
 export class CartComponent {
 
+  cartService = inject(CartService);
+  phoneService = inject(PhoneService);
   items = this.cartService.getItems();
+  itemsBought = JSON.parse(localStorage.getItem('itemsBought') || '{}');
 
   checkoutForm =
     this.formBuilder.group({
       name: '', address: ''
     });
 
-  constructor(private cartService: CartService,
-              private formBuilder: FormBuilder) {
+  constructor(private formBuilder: FormBuilder) {
+    this.phoneService.isBought(this.itemsBought);
   }
 
   onSubmit(): void {
+    this.phoneService.isBought(this.itemsBought);
+    localStorage.setItem('itemsBought', JSON.stringify(this.items));
     this.items = this.cartService.clearCart();
-    //console.warn('Your order has been submitted', this.checkoutForm.value);
     this.checkoutForm.reset();
   }
 

@@ -9,3 +9,8 @@ img {
   height: 370px;
   margin-bottom: 40px;
 }
+
+span {
+  color: red;
+  font-weight: bold;
+}

@@ -5,4 +5,5 @@ export interface Phone {
   description: string;
   url: string;
   provider: string;
+  bought: boolean;
 }
